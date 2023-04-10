@@ -1,0 +1,158 @@
+body {
+  background: #0e0e0e;
+  color: #ffaa50;
+}
+
+.displayNoneForm {
+  display: none !important;
+}
+
+.login {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+
+  .container-form {
+    display: none;
+    &.form {
+      display: block !important;
+    }
+  }
+  .form-container {
+    form {
+      label {
+        color: var(--black);
+        font-size: 20px;
+        display: flex;
+        margin-top: 10px;
+      }
+      padding: 20px;
+      background: var(--white);
+      box-shadow: var(--box-shadow);
+      text-align: center;
+      width: 500px;
+      .check {
+        width: 100%;
+        height: 20px;
+        display: flex;
+        justify-content: left;
+        margin-top: 5px;
+        font-size: 20px;
+        input {
+          padding: 5px;
+          margin: 10px;
+          &::placeholder {
+            background: rgb(255 170 80 / 5%);
+          }
+        }
+      }
+      .proName {
+        font-size: 20px;
+        margin: 20px 0;
+      }
+      .goBack {
+        &:hover {
+        }
+      }
+      .password {
+        position: relative;
+        cursor: pointer;
+        i {
+          position: absolute;
+          right: 15px;
+          top: 40%;
+          cursor: pointer;
+          font-size: 18px;
+          &:hover {
+          }
+        }
+      }
+      .img {
+        width: 50%;
+        margin: auto;
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+
+      input {
+        text-transform: capitalize;
+
+        &:nth-child(2) {
+          text-transform: lowercase;
+        }
+        background: #e5e5e5;
+      }
+      .btns {
+        width: 100%;
+        border-radius: 5px;
+        background: #ffaa50;
+        color: white;
+        height: 50px;
+        display: block;
+        text-align: center;
+        cursor: pointer;
+        font-size: 20px;
+        margin-top: 10px;
+        background: var(--red);
+      }
+      .btn,
+      .delete-btn {
+        background: #ffaa50;
+        color: white;
+        outline: none;
+        border: none;
+        width: 106%;
+        border-radius: 5px;
+        height: 50px;
+        display: block;
+        text-align: center;
+        cursor: pointer;
+        font-size: 20px;
+        margin-top: 10px;
+        &:hover {
+          background: #ffab28;
+        }
+      }
+
+      p {
+        margin-top: 15px;
+        font-size: 20px;
+        a {
+          color: white;
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+      h3 {
+        margin-bottom: 10px;
+        font-size: 30px;
+        text-transform: uppercase;
+      }
+      .box {
+        width: 100%;
+        border-radius: 5px;
+        padding: 12px 14px;
+        font-size: 18px;
+        margin: 10px 0;
+      }
+    }
+  }
+}
+.logins {
+  display: none;
+  &.loginActive {
+    display: block;
+  }
+}
+
+.user {
+  display: none;
+  &.userActive {
+    display: block;
+  }
+}
